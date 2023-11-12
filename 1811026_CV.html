@@ -17,9 +17,9 @@
     </div>
 
     <div id="buttons">
-        <button class="button" onclick="showContent('work')">Work</button>
-        <button class="button" onclick="showContent('projects')">Projects</button>
-        <button class="button" onclick="showContent('edq')">Educational Qualifications</button>
+        <button id="workbutton" class="button" onclick="showContent('work')">Work</button>
+        <button id="projectsbutton" class="button" onclick="showContent('projects')">Projects</button>
+        <button id="edqbutton" class="button" onclick="showContent('edq')">Education</button>
     </div>
 
     <div id="content">
@@ -68,10 +68,18 @@
             document.getElementById('projectsContent').style.display = 'none';
             document.getElementById('edqContent').style.display = 'none';
 
+          
             // Show the selected content section
             document.getElementById(contentType + 'Content').style.display = 'block';
             document.getElementById('content').style.display = 'flex';
+
+            document.getElementById('workbutton').style = 'background-color: #4CAF50; color: white;';
+            document.getElementById('projectsbutton').style = 'background-color: #4CAF50; color: white;';
+            document.getElementById('edqbutton').style = 'background-color: #4CAF50; color: white;';
+
+            document.getElementById(contentType + 'button').style = 'background-color: rgb(163, 246, 169); color: black;';
         }
+
     </script>
 
 </body>
