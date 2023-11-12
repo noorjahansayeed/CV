@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+</head>
+<body>
+
+    <div id="header">
+        <div id="profile-image">
+            <img src="Noorjahan Sayeed.jpeg" alt="Your Image">
+        </div>
+        <h1>Noorjahan Sayeed</h1>
+        <p> <em> Email: sayeednoorjahan9@gmail.com</em></p>
+    </div>
+
+    <div id="buttons">
+        <button class="button" onclick="showContent('work')">Work</button>
+        <button class="button" onclick="showContent('projects')">Projects</button>
+        <button class="button" onclick="showContent('edq')">Educational Qualifications</button>
+    </div>
+
+    <div id="content">
+        <div id="workContent">
+            <h2>Work Experience</h2>
+            <p><strong>Lab Manager (Biology Lab)</strong><br>
+                <em>Independent University, Bangladesh | Dhaka | 2019-2022</em></p>
+                <p>Worked extensively in the biology lab, specializing in equipment handling and sanitization. Assisted students by providing necessary equipment and supported faculty members in paper checking tasks.</p>
+                <p><strong>Customer Service Representative</strong><br>
+                <em>Toton Empress | Dhaka | 2022-Ongoing</em></p>
+                
+                <p>Provided excellent customer service across multiple platforms, addressing inquiries, resolving issues, and maintaining a high satisfaction rate. Collaborated with cross-functional teams to relay customer feedback for continuous improvement.</p>
+                
+        </div>
+
+        <div id="projectsContent">
+            <h2>Projects</h2>
+            <p><strong>Air Pollution Detecting Device:</strong><br>
+                Developed an innovative air pollution detection device to monitor air quality in real-time. Implemented sensor technology and data analysis algorithms for accurate pollution measurements. Collaborated with a multidisciplinary team to address environmental challenges.</p>
+                
+                <p><strong>Organ Donation Management System: BeatLink:</strong><br>
+                Led the development of "BeatLink," an efficient organ donation management system. Designed and implemented features to streamline organ matching and donation processes. Improved system efficiency, reducing wait times for organ recipients.</p>
+                
+                <p><strong>mHealth App "Gorvorokkha" (GDM App):</strong><br>
+                Created "Gorvorokkha," a mobile health app focusing on Gestational Diabetes Mellitus (GDM). Implemented user-friendly interfaces and features to monitor and manage GDM. Contributed to improving maternal and child health outcomes through technology.</p>
+                
+        </div>
+
+        <div id="edqContent">
+            <h2>Educational Qualifications</h2>
+            <p>SSC (2016): GPA 4.87</p>
+            <p>HSC (2018): GPA 3.75</p>
+
+        </div>
+    </div>
+
+    <script>
+        // Set initial display to none for each content section
+        document.getElementById('workContent').style.display = 'none';
+        document.getElementById('projectsContent').style.display = 'none';
+        document.getElementById('edqContent').style.display = 'none';
+
+        function showContent(contentType) {
+            // Hide all content sections
+            document.getElementById('workContent').style.display = 'none';
+            document.getElementById('projectsContent').style.display = 'none';
+            document.getElementById('edqContent').style.display = 'none';
+
+            // Show the selected content section
+            document.getElementById(contentType + 'Content').style.display = 'block';
+            document.getElementById('content').style.display = 'flex';
+        }
+    </script>
+
+</body>
+</html>
