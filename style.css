@@ -8,9 +8,6 @@ body {
 h1 {
     margin-top: 10px;
 }
-h2 {
-    align-items: center;
-}
 
 #header {
     display: flex;
@@ -39,6 +36,7 @@ h2 {
 }
 
 .button {
+    width: 170px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -47,6 +45,11 @@ h2 {
     color: #fff;
     border: none;
     border-radius: 5px;
+}
+
+.button:hover {
+    background-color: rgb(163, 246, 169);
+    color: black;
 }
 
 #content {
